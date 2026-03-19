@@ -12,3 +12,7 @@ __pycache__/
 *.pyc
 .DS_Store
 multipag.sql
+
+# Sensitive configuration files (contain credentials)
+Conf/*.conf
+src/backup/
