@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<File name="Aprovador" fileName="/home/user/App/Binarios/Log/Aprovador.log"
+			append="true">
+			<PatternLayout pattern="%t %-5p %c{2} - %m%n" />
+		</File>
+		<File name="Monitor" fileName="/home/user/App/Binarios/Log/Monitor.log"
+			append="true">
+			<PatternLayout pattern="%t %-5p %c{2} - %m%n" />
+		</File>
+		<File name="Downloader"
+			fileName="/home/user/App/Binarios/Log/Downloader.log" append="true">
+		</File>
+		<File name="AprovadorGradual"
+			fileName="/home/user/App/Binarios/Log/AprovadorGradual.log" append="true">
+		</File>
+		<File name="AprovadorBanco"
+			fileName="/home/user/App/Binarios/Log/AprovadorBanco.log" append="true">
+		</File>
+		<File name="Aprovador2"
+			fileName="/home/user/App/Binarios/Log/Aprovador2.log" append="true">
+			<PatternLayout pattern="%t %-5p %c{2} - %m%n"></PatternLayout>
+		</File>
+		<File name="Liquidador" fileName="C:\\App\\Log\\Liquidador.log"
+			append="true">
+			<PatternLayout pattern="%t %-5p %c{2} - %m%n"></PatternLayout>
+		</File>
+
+	</Appenders>
+	<Loggers>
+		<!-- <Logger name="org.apache.log4j.xml" level="info"> -->
+		<Logger name="Aprovador" level="info">
+			<AppenderRef ref="Aprovador" />
+		</Logger>
+		<Logger name="Monitor" level="info">
+			<AppenderRef ref="Monitor" />
+		</Logger>
+		<Logger name="Downloader" level="info">
+			<AppenderRef ref="Downloader"></AppenderRef></Logger>
+		<Logger name="AprovadorGradual" level="info">
+			<AppenderRef ref="AprovadorGradual"></AppenderRef></Logger>
+		<Logger name="AprovadorBanco" level="info">
+			<AppenderRef ref="AprovadorBanco"></AppenderRef></Logger>
+		<Logger name="Aprovador2" level="info">
+			<AppenderRef ref="Aprovador2"></AppenderRef></Logger>
+		<Logger name="Liquidador" level="info">
+			<AppenderRef ref="Liquidador"></AppenderRef></Logger>
+	</Loggers>
+</Configuration>
